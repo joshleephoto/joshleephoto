@@ -1,0 +1,328 @@
+html {
+  overflow-y: scroll;
+}
+
+
+/* Fonts */
+/* add later */
+
+/* Text */
+/* Currently unused */
+h1 {
+  font-family: monospace;
+  font-size: 18px;
+  color: #000000;
+  line-height: 1.5;
+  }
+/* Font for menu header text */
+h2 {
+  font-family: monospace;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.5;
+  }
+/* Font for menu text */
+p {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.5;
+  }
+/* Font for sidebar menu subtitle */
+p2 {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #969696;
+  line-height: 1.5;
+}
+/* Font for footer (currently unused) */
+p3 {
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #000000;
+  text-align: center;
+  line-height: 1.5;
+}
+/* Font for project subtitles */
+p4 {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.5;
+    }
+/* Font for index page text */
+p5 {
+  font-family: monospace;
+  font-size: 13px;
+  color: #000000;
+  line-height: 1.5;
+    }
+
+/* Link text colours */
+a:link {
+  color: #000000;
+  text-decoration: none;
+}
+a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover {
+  color: #3d3d3d;
+  text-decoration: none;
+}
+a:active {
+  color: #3d3d3d;
+  text-decoration: none;
+}
+
+
+/* Background */
+body{
+  background-color: #ffffff;
+}
+/*Dark Theme - not done*
+body{
+  background-color: #141414;
+}
+/
+
+/* Layout */
+.body{
+  display: block;
+}
+
+.columns{
+  display: inline-block;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.columns > * {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.left{
+  position: fixed;
+  width: 200px;
+  margin-left: 25px;
+  text-align: left;
+}
+.right{
+  width: 70%;
+  margin-left: 300px;
+  padding-left: 50px;
+  padding-top: 40px;
+  text-align: left;
+}
+.project{
+  margin-top:-40px;
+  padding-bottom: 10px;
+}
+.projectheader{
+  padding-left: 7px;
+}
+.profile{
+  padding-left: 50px;
+}
+
+.footer{
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+/* Image Gallery */
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.gallery-column {
+  flex: 40%;
+  max-width: 60%;
+  padding: 0 4px;
+}
+
+.gallery-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Article Blocks */
+.contentblock{
+  display: block;
+  text-align: center;
+  background-color: #ffffff;
+  border: 2px solid;
+  border-color: #969696;
+  width: 330px;
+  height: 420px;
+}
+.content{
+  display: inline-block;
+  text-align: center;
+  max-width: 400px;  
+  margin-top: 20px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+.content img {
+  margin: auto;
+  align-content: center;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+.two {
+  grid-column: 2;
+  grid-row: 1;
+}
+.three {
+  grid-column: 3;
+  grid-row: 1;
+}
+.four {
+  grid-column: 1;
+  grid-row: 2;
+}
+.five {
+  grid-column: 2;
+  grid-row: 2;
+}
+.six {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+/* Mobile Layout */
+@media screen and (max-width: 768px) {
+body{
+  /* For testing if mobile view is active */
+  background-color: #9dc1fc;
+}
+.columns{
+  display: block;
+  width: 100%;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.left{
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -50px;
+  text-align: center;
+}
+.right{
+  display: block;
+  position: relative;
+  width: 100%;
+  /* Reset alignment */
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  /* Centralise elements */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.project{
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+.projectheader{
+  padding-top: 20px;
+  padding-left: 0px;
+}
+.profile{
+  padding-left: 0px;
+}
+img{
+  max-width: 300px;
+}
+/* Change display of article blocks in mobile view */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  justify-items: center;
+}
+.contentblock{
+  display: block;
+  text-align: center;
+  background-color: #ffffff;
+  border: 2px solid;
+  border-color: #969696;
+  width: 300px;
+  height: 420px;
+}
+.content{
+  display: inline-block;
+  text-align: center;
+  max-width: 290px;  
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+.two {
+  grid-column: 1;
+  grid-row: 2;
+}
+.three {
+  grid-column: 1;
+  grid-row: 3;
+}
+/* Change footer padding for mobile */
+.footer{
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+  }
