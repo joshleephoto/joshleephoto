@@ -233,7 +233,6 @@ body{
 @media screen and (max-width: 768px) {
 body{
   /* For testing if mobile view is active */
-  background-color: #9dc1fc;
 }
 .columns{
   display: block;
